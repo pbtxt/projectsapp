@@ -7,6 +7,8 @@ application for managing student project grades
 - Create, delete, modify and list students 
 - Create, delete, modify and list projects 
 - Create, delete, modify and list students grades 
+- Create, delete, modify and list professors
+- Create, delete, modify and list faculties
 
 
 ## Tech
