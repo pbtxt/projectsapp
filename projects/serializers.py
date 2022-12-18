@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Project
 from .models import Student
 from .models import Grade
+from .models import Professor
 
 
 class ProjectSerializer(serializers.ModelSerializer):
@@ -21,5 +22,12 @@ class StudentSerializer(serializers.ModelSerializer):
 class GradeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Grade
+        fields = '__all__'
+        read_only_fields = ('created_at',)
+
+
+class ProfessorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Professor
         fields = '__all__'
         read_only_fields = ('created_at',)

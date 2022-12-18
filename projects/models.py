@@ -20,3 +20,10 @@ class Grade(models.Model):
     projectId = models.CharField(max_length=100)
     score = models.CharField(max_length=10)
     created_at = models.DateTimeField(auto_now_add=True)
+
+
+class Professor(models.Model):
+    internalId = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
+    facultyId = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
